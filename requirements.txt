@@ -4,3 +4,4 @@ streamlit
 joblib==1.2.0
 scikit-learn
 pip==23.3.1
+lightgbm==4.1.0
