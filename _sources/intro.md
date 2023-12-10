@@ -1,5 +1,5 @@
 # PROYEK SAINS DATA
-<img src='F2 (3).JPG'></img>
+<img src='https://drive.google.com/file/d/1MqbQSdhoVBLpssZgq-YRbzMvY5TJmiod/view?usp=sharing'></img>
 Mubessirul Ummah - 210411100140
 
 mubarijojo.ummah11@gmail.com
@@ -24,5 +24,8 @@ Proyek sains data adalah usaha sistematis untuk mengumpulkan, mengorganisir, men
 
 Proyek sains data dapat diterapkan dalam berbagai bidang seperti keuangan, kesehatan, pemasaran, dan lainnya. Tujuan utamanya adalah untuk membuat keputusan yang lebih baik, mengoptimalkan proses, dan mendapatkan pemahaman yang lebih baik tentang fenomena yang dihadapi berdasarkan analisis data yang akurat dan relevan.
 
-```{tableofcontents}
-```
+
+# file: PSD_Mubessirul Ummah_210411100140_Water Quality
+# file: 210411100140_Mubessirul_Ummah_PSD_Pertemuan_6
+# file: pycaret
+
