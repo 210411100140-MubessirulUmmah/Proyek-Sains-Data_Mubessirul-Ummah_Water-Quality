@@ -1,5 +1,5 @@
 # <center><b>PROYEK SAINS DATA<b></center>
-<img src='https://drive.google.com/file/d/1MqbQSdhoVBLpssZgq-YRbzMvY5TJmiod/view?usp=sharing'></img>
+<img src="https://drive.google.com/file/d/1MqbQSdhoVBLpssZgq-YRbzMvY5TJmiod/view?usp=sharing" alt="Logo">
 Mubessirul Ummah - 210411100140
 
 mubarijojo.ummah11@gmail.com
