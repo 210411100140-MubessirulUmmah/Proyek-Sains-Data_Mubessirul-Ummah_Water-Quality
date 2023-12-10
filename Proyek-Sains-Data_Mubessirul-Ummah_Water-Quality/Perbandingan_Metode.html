@@ -1,0 +1,2021 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>——————- TUGAS PROYEK SAINS DATA ——————– &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/Perbandingan_Metode';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../PSD_Mubessirul%20Ummah_210411100140_Water%20Quality.html"><center><b>PROYEK SAINS DATA WATER QUALITY<b></b></b></center></a></li>
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProyek-Sains-Data_Mubessirul-Ummah_Water-Quality/Perbandingan_Metode.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/Perbandingan_Metode.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>——————- TUGAS PROYEK SAINS DATA ——————–</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>——————- TUGAS PROYEK SAINS DATA ——————–</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bussiness-understanding">BUSSINESS UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-proyek">TUJUAN PROYEK</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menilai-kualitas-pada-anggur-merah-red-wine-yang-diproduksi-oleh-perusahaan-vinho-verde-dengan-menggunakan-model-klasifikasi-kualitas-anggur-dapat-dinyatakan-dengan-menentukan-nilai-regressi-seperti-berikut">Menilai kualitas pada anggur merah (red wine) yang diproduksi oleh perusahaan vinho verde dengan menggunakan model klasifikasi, kualitas anggur dapat dinyatakan dengan menentukan nilai regressi seperti berikut:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-fitur">DESKRIPSI FITUR</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teknik-pengumpulan-data">Teknik Pengumpulan Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">DESKRIPSI FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-data-understanding">TIPS DATA UNDERSTANDING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">DESKRIPSI FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data">TIPE DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terdapat-beberapa-tipe-data-yang-terdapat-didalam-dataset-diantaranya">Terdapat beberapa Tipe Data yang terdapat didalam dataset, diantaranya</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-value">IDENTIFIKASI MISSING VALUE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">VISUALISASI DATA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-outlier">IDENTIFIKASI OUTLIER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-menetukan-kualitas-wine-buruk-baik-diatas-sudah-ada">TIPS MENETUKAN KUALITAS WINE (BURUK/BAIK) (DIATAS SUDAH ADA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terdapat-tips-untuk-menangani-masalah-regresi-maka-dapat-menetapkan-batas-kualitas-anggur-dimana-jika">Terdapat Tips untuk menangani masalah regresi maka dapat menetapkan batas kualitas anggur dimana, jika:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-anggur-lebih-besar-sama-dengan-7-maka-dinyatakan-good-atau-bernilai-1">-Kualitas Anggur lebih besar sama dengan 7 maka dinyatakan “good” atau bernilai 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-anggur-di-bawah-angka-7-maka-dinyatakan-not-good-atau-bernilai-0">-Kualitas Anggur di bawah angka 7 maka dinyatakan “not good” atau bernilai 0</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-refrensi-disini">Link Refrensi :  disini</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-proporsi-jumlah-kelas-pada-data">IDENTIFIKASI PROPORSI JUMLAH KELAS PADA DATA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">PREPROCESSING DATA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dari-data-understanding-diatas-dapat-disimpulkan-bahwasannya">Dari Data Understanding diatas dapat disimpulkan bahwasannya:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maka-dari-itu-perlu-dilakukan-beberapa-langkah-preprocessing-pada-data-seperti">Maka dari itu perlu dilakukan beberapa langkah preprocessing pada data seperti:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penanganan-pada-outlier-data">Penanganan Pada Outlier Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#balancing-data">Balancing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-k-atau-fitur-yang-berpengaruh-pada-dataset-sebelum-dinormalisasi">Mencari K atau Fitur yang berpengaruh pada dataset (SEBELUM DINORMALISASI)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data">Membagi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-zscore">NORMALISASI ZSCORE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-minmax">NORMALISASI MINMAX</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">SELEKSI FITUR</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling">MODELING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscore">ZSCORE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-random-forest">KONSEP RANDOM FOREST ??????????</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax">MINMAX</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">EVALUASI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan">PERBANDINGAN</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="tugas-proyek-sains-data">
+<h1><strong>——————- TUGAS PROYEK SAINS DATA ——————–</strong><a class="headerlink" href="#tugas-proyek-sains-data" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Nama  : Soni Indra Maulana</p></li>
+<li><p>NIM   : 210411100136</p></li>
+<li><p>Kelas : B</p></li>
+</ul>
+</section>
+<section id="bussiness-understanding">
+<h1>BUSSINESS UNDERSTANDING<a class="headerlink" href="#bussiness-understanding" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="tujuan-proyek">
+<h2>TUJUAN PROYEK<a class="headerlink" href="#tujuan-proyek" title="Permalink to this heading">#</a></h2>
+<section id="menilai-kualitas-pada-anggur-merah-red-wine-yang-diproduksi-oleh-perusahaan-vinho-verde-dengan-menggunakan-model-klasifikasi-kualitas-anggur-dapat-dinyatakan-dengan-menentukan-nilai-regressi-seperti-berikut">
+<h3>Menilai kualitas pada anggur merah (red wine) yang diproduksi oleh perusahaan vinho verde dengan menggunakan model klasifikasi, kualitas anggur dapat dinyatakan dengan menentukan nilai regressi seperti berikut:<a class="headerlink" href="#menilai-kualitas-pada-anggur-merah-red-wine-yang-diproduksi-oleh-perusahaan-vinho-verde-dengan-menggunakan-model-klasifikasi-kualitas-anggur-dapat-dinyatakan-dengan-menentukan-nilai-regressi-seperti-berikut" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Kualitas Anggur lebih besar sama dengan 7 maka dinyatakan “good” atau bernilai 1</p></li>
+<li><p>Kualitas Anggur di bawah angka 7 maka dinyatakan “not good” atau bernilai 0</p></li>
+</ul>
+<p>Untuk menntukan kualitas dari anggur dapat dilihat dari ciri-ciri sebagai berikut:</p>
+</section>
+</section>
+<section id="deskripsi-fitur">
+<h2>DESKRIPSI FITUR<a class="headerlink" href="#deskripsi-fitur" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Fixed acidity (Kadar asam tartarat pada anggur) (g/dm3)</strong></p></li>
+<li><p><strong>Volatile acidity (Kadar asam asetat pada anggur)(g/dm3)</strong></p></li>
+<li><p><strong>Citric acid (Kadar asam sitrat dalam anggur) (g/dm3)</strong></p></li>
+<li><p><strong>Residual Sugar(Kadar sisa gula pada wine) (g/dm3)</strong></p></li>
+<li><p><strong>Chlorides (Kadar natrium klorida dalam anggur) (g/dm3)</strong></p></li>
+<li><p><strong>Free sulfur dioxide (Tingkat sulfur dioksida bebas dalam anggur) (mg/dm3)</strong></p></li>
+<li><p><strong>Total sulfur dioxide (SO2 Total = SO2 bebas + SO2 bereaksi) (mg/dm3)</strong></p></li>
+<li><p><strong>Density(Kepadatan anggur) (g/cm3)</strong></p></li>
+<li><p><strong>pH(tingkat keasaman anggur)(Range: 0 - 14)</strong></p></li>
+<li><p><strong>Sulphates(Kadar kalium sulfat dalam anggur)(g/dm3)</strong></p></li>
+<li><p><strong>Alcohol(Konsentrasi alkohol dalam anggur)(% vol. )</strong></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_recall_fscore_support</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">classification_report</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_validate</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">numpy.core.arrayprint</span> <span class="kn">import</span> <span class="n">printoptions</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">SelectKBest</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">mutual_info_classif</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;winequality-red.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-fe7c5d752f2c&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;winequality-red.csv&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>                 <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
+<span class="ne">--&gt; </span><span class="mi">211</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span> 
+<span class="g g-Whitespace">    </span><span class="mi">213</span>         <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">329</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">find_stack_level</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">330</span>                 <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">331</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span> 
+<span class="g g-Whitespace">    </span><span class="mi">333</span>         <span class="c1"># error: &quot;Callable[[VarArg(Any), KwArg(Any)], Any]&quot; has no</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">948</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">949</span> 
+<span class="ne">--&gt; </span><span class="mi">950</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">951</span> 
+<span class="g g-Whitespace">    </span><span class="mi">952</span> 
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">603</span> 
+<span class="g g-Whitespace">    </span><span class="mi">604</span>     <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">605</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">606</span> 
+<span class="g g-Whitespace">    </span><span class="mi">607</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1440</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1441</span>         <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1442</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1443</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1444</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1733</span>                 <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1734</span>                     <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1735</span>             <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1736</span>                 <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1737</span>                 <span class="n">mode</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">854</span>         <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">855</span>             <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">856</span>             <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">857</span>                 <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">858</span>                 <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;winequality-red.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="data-understanding">
+<h1>DATA UNDERSTANDING<a class="headerlink" href="#data-understanding" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="teknik-pengumpulan-data">
+<h2>Teknik Pengumpulan Data<a class="headerlink" href="#teknik-pengumpulan-data" title="Permalink to this heading">#</a></h2>
+<p>Studi ini akan membahas vinho verde, produk unik dari wilayah Minho (barat laut) Portugal.
+Data dikumpulkan dari Mei 2004 hingga Februari 2007 hanya dengan menggunakan proteksi
+penunjukan sampel asal yang diuji di badan sertifikasi resmi (CVRVV).CVRVV adalah organisasi antar-profesional dengan
+tujuan meningkatkan kualitas dan pemasaran vinho verde. Datanya adalah
+dicatat oleh sistem komputerisasi (iLab), yang secara otomatis mengelola
+proses pengujian sampel anggur mulai dari permintaan produsen hingga analisis laboratorium dan sensorik
+Setiap entri menunjukkan tes tertentu (analitis atau sensorik) dan
+database akhir diekspor ke dalam satu lembar (.csv)</p>
+<p>Tentang preferensi, setiap sampel dievaluasi oleh minimal tiga penilai sensorik (menggunakan pengecap buta),
+yang menilai anggur dalam skala yang berkisar dari 0 (sangat buruk) hingga 10 (sangat baik).</p>
+<p>Jumlah Dataset sebanyak 1599 dengan rincian sebagai berikut:</p>
+<ul class="simple">
+<li><p>Berkualitas buruk (0) = 1382 data</p></li>
+<li><p>Berkualitas baik (1) = 217 data</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Apakah terdapat Missing Values pada data ???</p></li>
+<li><p>Apakah terdapat Outlier pada data ???</p></li>
+<li><p>Apakah proporsi dari setiap kelas pada data sudah seimbang atau inbalancing ???</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2>DESKRIPSI FITUR<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p><strong>Fixed acidity (Kadar asam tartarat pada anggur) (g/dm3)</strong> :</p>
+<p>Asam tetap yang dominan ditemukan dalam anggur adalah tartarat, malat, sitrat, dan
+suksinat.Tingkat masing-masing yang ditemukan dalam anggur bisa sangat bervariasi tetapi dalam
+secara umum orang akan mengharapkan untuk melihat 1.000 hingga 4.000 mg/L asam tartarat, 0 hingga 8.000 mg/L asam malat, 0 hingga 500 mg/L asam sitrat, dan 500 hingga 2.000 mg/L
+asam suksinat.</p>
+</li>
+<li><p><strong>Volatile acidity (Kadar asam asetat pada anggur)(g/dm3)</strong> :</p>
+<p>Keasaman yang mudah menguap adalah ukuran berat molekul rendah (atau uap
+dapat disuling) asam lemak dalam anggur dan umumnya dianggap sebagai bau
+cuka. Rata-rata
+nilai keasaman yang mudah menguap untuk anggur meja merah selama periode ini adalah sekitar 0,60
+gram/L.</p>
+</li>
+<li><p><strong>Citric acid (Kadar asam sitrat dalam anggur)(g/dm3)</strong> :</p>
+<p>Asam sitrat memiliki banyak kegunaan dalam produksi anggur. Asam sitrat adalah bahan organik lemah
+asam, yang sering digunakan sebagai pengawet alami atau bahan tambahan pada makanan atau
+minuman untuk menambah rasa asam pada makanan.</p>
+</li>
+<li><p><strong>Residual Sugar(Kadar sisa gula pada wine)(g/dm3)</strong>:</p>
+<p>Gula Residu berasal dari gula anggur alami yang tersisa dalam anggur setelahnya
+fermentasi alkohol selesai. Itu diukur dalam gram per liter. Sisa
+kadar gula bervariasi pada berbagai jenis anggur. Faktanya, banyak toko kelontong
+anggur berlabel “kering” mengandung sekitar 10 g/L sisa gula.</p>
+</li>
+<li><p><strong>Chlorides (Kadar natrium klorida dalam anggur)(g/dm3)</strong> :</p>
+<p>Klorida (natrium klorida) memberi rasa asin pada anggur yang bisa berubah
+menjauhkan konsumen potensial. Natrium klorida, umumnya dikenal sebagai garam, adalah
+senyawa ionik dengan rumus kimia NaCl. Maksimal
+konsentrasi klorida dalam anggur sekitar 0,20 - 0,60 g/L (Vallone et al.,
+2021).</p>
+</li>
+<li><p><strong>Free sulfur dioxide (Tingkat sulfur dioksida bebas dalam anggur)(mg/dm3)</strong>:</p>
+<p>Sulfur dioksida (SO2) dan garamnya telah ditambahkan selama pembuatan anggur
+sejak abad ke-17. Ini masih berpotensi
+menyebabkan reaksi merugikan dan produk beracun bagi konsumen anggur dan
+pembuat anggur dalam jumlah lebih dari 10 mg/L, dan karenanya, seharusnya
+ditangani dengan hati-hati.</p>
+</li>
+<li><p><strong>Total sulfur dioxide (SO2 Total = SO2 bebas + SO2 bereaksi) (mg/dm3)</strong> :</p>
+<p>Bagian dari sulfur dioksida bebas ditambah
+bagian yang terikat dengan bahan kimia lain di dalamnya
+anggur seperti aldehida, pigmen, atau
+gula
+konsentrasi nilai SO2 bebas 25 mg/L aktif
+anggur merah. SO2 yang aktif
+konsentrasi 0,35 mg/L memastikan perlindungan minimum, dan nilai
+Perlindungan maksimal 0,6 mg/L</p>
+</li>
+<li><p><strong>Density(Kepadatan anggur) (g/cm3)</strong> :</p>
+<p>Massa jenis adalah massa per satuan volume anggur atau harus pada 20◦C. Dia
+dinyatakan dalam gram per mililiter, dan dilambangkan dengan simbol 20◦C.</p>
+</li>
+<li><p><strong>pH(tingkat keasaman anggur)(Range: 0 - 14)</strong> :</p>
+<p>pH adalah skala yang digunakan untuk menentukan keasaman atau kebasaan suatu larutan berair
+(pH yang lebih rendah menunjukkan keasaman yang lebih tinggi). Tingkat pH anggur berkisar antara 3 hingga
+4.</p>
+</li>
+<li><p><strong>Sulphates(Kadar kalium sulfat dalam anggur)(g/dm3)</strong> :</p>
+<p>Sulfit, juga biasa disebut sulfur dioksida, adalah senyawa kimia yang
+mengandung ion sulfit. Mereka ditemukan secara alami dalam berbagai makanan
+sumbernya, termasuk teh hitam, kacang tanah, telur, dan makanan fermentasi. Meskipun mereka ditemukan di banyak makanan dan minuman,
+hal ini terutama terkait dengan daftar panjang efek samping yang berkaitan dengan anggur
+konsumsi, termasuk sakit kepala akibat anggur yang ditakuti (Roullier-Gall
+dkk., 2017).</p>
+</li>
+<li><p><strong>Alcohol(Konsentrasi alkohol dalam anggur)(% vol. )</strong> :</p>
+<p>Alkohol adalah senyawa organik yang membawa setidaknya satu hidroksil
+gugus fungsi (−OH) terikat pada atom karbon jenuh. Anggur bisa dimiliki
+berkisar antara 5% dan 23% Alkohol berdasarkan Volume (ABV).
+Output variable (based on sensory data)</p>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1599 entries, 0 to 1598
+Data columns (total 12 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   fixed acidity         1599 non-null   float64
+ 1   volatile acidity      1599 non-null   float64
+ 2   citric acid           1599 non-null   float64
+ 3   residual sugar        1599 non-null   float64
+ 4   chlorides             1599 non-null   float64
+ 5   free sulfur dioxide   1599 non-null   float64
+ 6   total sulfur dioxide  1599 non-null   float64
+ 7   density               1599 non-null   float64
+ 8   pH                    1599 non-null   float64
+ 9   sulphates             1599 non-null   float64
+ 10  alcohol               1599 non-null   float64
+ 11  quality               1599 non-null   int64  
+dtypes: float64(11), int64(1)
+memory usage: 150.0 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;fixed acidity&#39;, &#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;residual sugar&#39;,
+       &#39;chlorides&#39;, &#39;free sulfur dioxide&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;,
+       &#39;pH&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;, &#39;quality&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tips-data-understanding">
+<h2>TIPS DATA UNDERSTANDING<a class="headerlink" href="#tips-data-understanding" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Memahami dengan mendeskripsikan setiap fitur didalam dataset seperti:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Deskripsi setiap fitur dalam dataset</p></li>
+<li><p>Tipe Data di setiap fitur dalam dataset</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Melakukan indetifikasi keberadaan Missing Values pada setiap fitur dalam dataset</p></li>
+<li><p>Eksplorasi Data (Visualisasi Data)</p></li>
+<li><p>Mengidentifikasi Outlier yang terdapat dalam dataset</p></li>
+<li><p>Mengidentifikasi jumlah proporsi data setiap kelas dalam data agar jika terdapat inbalancing pada data dapat diketahui</p></li>
+</ol>
+</section>
+<section id="id2">
+<h2>DESKRIPSI FITUR<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<ul>
+<li><p><strong>Fixed acidity (Kadar asam tartarat pada anggur) (g/dm3)</strong> :</p>
+<p>Asam tetap yang dominan ditemukan dalam anggur adalah tartarat, malat, sitrat, dan
+suksinat.Tingkat masing-masing yang ditemukan dalam anggur bisa sangat bervariasi tetapi dalam
+secara umum orang akan mengharapkan untuk melihat 1.000 hingga 4.000 mg/L asam tartarat, 0 hingga 8.000 mg/L asam malat, 0 hingga 500 mg/L asam sitrat, dan 500 hingga 2.000 mg/L
+asam suksinat.</p>
+</li>
+<li><p><strong>Volatile acidity (Kadar asam asetat pada anggur)(g/dm3)</strong> :</p>
+<p>Keasaman yang mudah menguap adalah ukuran berat molekul rendah (atau uap
+dapat disuling) asam lemak dalam anggur dan umumnya dianggap sebagai bau
+cuka. Rata-rata
+nilai keasaman yang mudah menguap untuk anggur meja merah selama periode ini adalah sekitar 0,60
+gram/L.</p>
+</li>
+<li><p><strong>Citric acid (Kadar asam sitrat dalam anggur)(g/dm3)</strong> :</p>
+<p>Asam sitrat memiliki banyak kegunaan dalam produksi anggur. Asam sitrat adalah bahan organik lemah
+asam, yang sering digunakan sebagai pengawet alami atau bahan tambahan pada makanan atau
+minuman untuk menambah rasa asam pada makanan.</p>
+</li>
+<li><p><strong>Residual Sugar(Kadar sisa gula pada wine)(g/dm3)</strong>:</p>
+<p>Gula Residu berasal dari gula anggur alami yang tersisa dalam anggur setelahnya
+fermentasi alkohol selesai. Itu diukur dalam gram per liter. Sisa
+kadar gula bervariasi pada berbagai jenis anggur. Faktanya, banyak toko kelontong
+anggur berlabel “kering” mengandung sekitar 10 g/L sisa gula.</p>
+</li>
+<li><p><strong>Chlorides (Kadar natrium klorida dalam anggur)(g/dm3)</strong> :</p>
+<p>Klorida (natrium klorida) memberi rasa asin pada anggur yang bisa berubah
+menjauhkan konsumen potensial. Natrium klorida, umumnya dikenal sebagai garam, adalah
+senyawa ionik dengan rumus kimia NaCl. Maksimal
+konsentrasi klorida dalam anggur sekitar 0,20 - 0,60 g/L (Vallone et al.,
+2021).</p>
+</li>
+<li><p><strong>Free sulfur dioxide (Tingkat sulfur dioksida bebas dalam anggur)(mg/dm3)</strong>:</p>
+<p>Sulfur dioksida (SO2) dan garamnya telah ditambahkan selama pembuatan anggur
+sejak abad ke-17. Ini masih berpotensi
+menyebabkan reaksi merugikan dan produk beracun bagi konsumen anggur dan
+pembuat anggur dalam jumlah lebih dari 10 mg/L, dan karenanya, seharusnya
+ditangani dengan hati-hati.</p>
+</li>
+<li><p><strong>Total sulfur dioxide (SO2 Total = SO2 bebas + SO2 bereaksi) (mg/dm3)</strong> :</p>
+<p>Bagian dari sulfur dioksida bebas ditambah
+bagian yang terikat dengan bahan kimia lain di dalamnya
+anggur seperti aldehida, pigmen, atau
+gula
+konsentrasi nilai SO2 bebas 25 mg/L aktif
+anggur merah. SO2 yang aktif
+konsentrasi 0,35 mg/L memastikan perlindungan minimum, dan nilai
+Perlindungan maksimal 0,6 mg/L</p>
+</li>
+<li><p><strong>Density(Kepadatan anggur) (g/cm3)</strong> :</p>
+<p>Massa jenis adalah massa per satuan volume anggur atau harus pada 20◦C. Dia
+dinyatakan dalam gram per mililiter, dan dilambangkan dengan simbol 20◦C.</p>
+</li>
+<li><p><strong>pH(tingkat keasaman anggur)(Range: 0 - 14)</strong> :</p>
+<p>pH adalah skala yang digunakan untuk menentukan keasaman atau kebasaan suatu larutan berair
+(pH yang lebih rendah menunjukkan keasaman yang lebih tinggi). Tingkat pH anggur berkisar antara 3 hingga
+4.</p>
+</li>
+<li><p><strong>Sulphates(Kadar kalium sulfat dalam anggur)(g/dm3)</strong> :</p>
+<p>Sulfit, juga biasa disebut sulfur dioksida, adalah senyawa kimia yang
+mengandung ion sulfit. Mereka ditemukan secara alami dalam berbagai makanan
+sumbernya, termasuk teh hitam, kacang tanah, telur, dan makanan fermentasi. Meskipun mereka ditemukan di banyak makanan dan minuman,
+hal ini terutama terkait dengan daftar panjang efek samping yang berkaitan dengan anggur
+konsumsi, termasuk sakit kepala akibat anggur yang ditakuti (Roullier-Gall
+dkk., 2017).</p>
+</li>
+<li><p><strong>Alcohol(Konsentrasi alkohol dalam anggur)(% vol. )</strong> :</p>
+<p>Alkohol adalah senyawa organik yang membawa setidaknya satu hidroksil
+gugus fungsi (−OH) terikat pada atom karbon jenuh. Anggur bisa dimiliki
+berkisar antara 5% dan 23% Alkohol berdasarkan Volume (ABV).
+Output variable (based on sensory data)</p>
+</li>
+<li><p><strong>quality (score between 0 and 10)</strong> :</p>
+<p>Kisaran: Dibawah 7 bernilai 0 (Buruk). Sedangkan jika lebih dari angka 7 bernilai 1 (Bagus)</p>
+</li>
+</ul>
+</section>
+<section id="tipe-data">
+<h2>TIPE DATA<a class="headerlink" href="#tipe-data" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="terdapat-beberapa-tipe-data-yang-terdapat-didalam-dataset-diantaranya">
+<h3>Terdapat beberapa Tipe Data yang terdapat didalam dataset, diantaranya<a class="headerlink" href="#terdapat-beberapa-tipe-data-yang-terdapat-didalam-dataset-diantaranya" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Tipe Data Rasio</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>fixed acidity</p></li>
+<li><p>volatile acidity</p></li>
+<li><p>citric acid</p></li>
+<li><p>residual sugar</p></li>
+<li><p>chlorides</p></li>
+<li><p>free sulfur dioxide</p></li>
+<li><p>total sulfur dioxide</p></li>
+<li><p>density</p></li>
+<li><p>pH</p></li>
+<li><p>sulphates</p></li>
+<li><p>alcohol</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Tipe Data Interval</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>quality</p></li>
+</ul>
+</div></blockquote>
+<p>Banyak data dalam masing-masing kelasnya</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;quality&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([5, 6, 7, 4, 8, 3], dtype=int64)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">quality</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>quality
+5    681
+6    638
+7    199
+4     53
+8     18
+3     10
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="identifikasi-missing-value">
+<h2>IDENTIFIKASI MISSING VALUE<a class="headerlink" href="#identifikasi-missing-value" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fixed acidity           0
+volatile acidity        0
+citric acid             0
+residual sugar          0
+chlorides               0
+free sulfur dioxide     0
+total sulfur dioxide    0
+density                 0
+pH                      0
+sulphates               0
+alcohol                 0
+quality                 0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualisasi-data">
+<h2>VISUALISASI DATA<a class="headerlink" href="#visualisasi-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#distribution data</span>
+<span class="n">data</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d03be6a855ca33b9cfa16c61e3b401eef4ffc49ec093d6fbb1afa582d84afd18.png" src="../_images/d03be6a855ca33b9cfa16c61e3b401eef4ffc49ec093d6fbb1afa582d84afd18.png" />
+</div>
+</div>
+</section>
+<section id="identifikasi-outlier">
+<h2>IDENTIFIKASI OUTLIER<a class="headerlink" href="#identifikasi-outlier" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="k">def</span> <span class="nf">detect_outliers_zscore</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">z_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">z_scores</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">outliers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">detect_outliers_zscore</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">outliers</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Outliers: 192
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tips-menetukan-kualitas-wine-buruk-baik-diatas-sudah-ada">
+<h2>TIPS MENETUKAN KUALITAS WINE (BURUK/BAIK) (DIATAS SUDAH ADA)<a class="headerlink" href="#tips-menetukan-kualitas-wine-buruk-baik-diatas-sudah-ada" title="Permalink to this heading">#</a></h2>
+<section id="terdapat-tips-untuk-menangani-masalah-regresi-maka-dapat-menetapkan-batas-kualitas-anggur-dimana-jika">
+<h3>Terdapat Tips untuk menangani masalah regresi maka dapat menetapkan batas kualitas anggur dimana, jika:<a class="headerlink" href="#terdapat-tips-untuk-menangani-masalah-regresi-maka-dapat-menetapkan-batas-kualitas-anggur-dimana-jika" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="kualitas-anggur-lebih-besar-sama-dengan-7-maka-dinyatakan-good-atau-bernilai-1">
+<h3>-Kualitas Anggur lebih besar sama dengan 7 maka dinyatakan “good” atau bernilai 1<a class="headerlink" href="#kualitas-anggur-lebih-besar-sama-dengan-7-maka-dinyatakan-good-atau-bernilai-1" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="kualitas-anggur-di-bawah-angka-7-maka-dinyatakan-not-good-atau-bernilai-0">
+<h3>-Kualitas Anggur di bawah angka 7 maka dinyatakan “not good” atau bernilai 0<a class="headerlink" href="#kualitas-anggur-di-bawah-angka-7-maka-dinyatakan-not-good-atau-bernilai-0" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="link-refrensi-disini">
+<h3>Link Refrensi :  <a class="reference external" href="https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009">disini</a><a class="headerlink" href="#link-refrensi-disini" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fitur</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;quality&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y_value</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y_value</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="identifikasi-proporsi-jumlah-kelas-pada-data">
+<h2>IDENTIFIKASI PROPORSI JUMLAH KELAS PADA DATA<a class="headerlink" href="#identifikasi-proporsi-jumlah-kelas-pada-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">target</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>quality
+0    1382
+1     217
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="preprocessing-data">
+<h1>PREPROCESSING DATA<a class="headerlink" href="#preprocessing-data" title="Permalink to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="dari-data-understanding-diatas-dapat-disimpulkan-bahwasannya">
+<h2>Dari Data Understanding diatas dapat disimpulkan bahwasannya:<a class="headerlink" href="#dari-data-understanding-diatas-dapat-disimpulkan-bahwasannya" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Didalam data tidak memiliki Missing Values</p></li>
+<li><p>Didalam data juga terdapat outlier yang terdeteksi</p></li>
+<li><p>Terjadi Inbalancing pada data</p></li>
+</ul>
+</section>
+<section id="maka-dari-itu-perlu-dilakukan-beberapa-langkah-preprocessing-pada-data-seperti">
+<h2>Maka dari itu perlu dilakukan beberapa langkah preprocessing pada data seperti:<a class="headerlink" href="#maka-dari-itu-perlu-dilakukan-beberapa-langkah-preprocessing-pada-data-seperti" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Penanganan pada Outlier</p></li>
+<li><p>Balancing Data agar jumlah kelas pada data menjadi seimbang</p></li>
+</ul>
+</section>
+<section id="penanganan-pada-outlier-data">
+<h2>Penanganan Pada Outlier Data<a class="headerlink" href="#penanganan-pada-outlier-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_outliers_zscore</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">z_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">z_scores</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">)</span>
+
+    <span class="c1"># Menghapus outlier dari data</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">z_scores</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+
+    <span class="k">return</span> <span class="n">data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">remove_outliers_zscore</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data tanpa outlier:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data tanpa outlier: 1451
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fitur</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;quality&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;quality&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y_value</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y_value</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">target</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>quality
+0    1250
+1     201
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="balancing-data">
+<h2>Balancing Data<a class="headerlink" href="#balancing-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import library</span>
+<span class="kn">from</span> <span class="nn">imblearn.over_sampling</span> <span class="kn">import</span> <span class="n">RandomOverSampler</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="c1"># Initialize RandomOverSampler</span>
+<span class="n">balancer</span> <span class="o">=</span> <span class="n">RandomOverSampler</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Apply Random Over-Sampling to balance the classes</span>
+<span class="n">fitur_balance</span><span class="p">,</span> <span class="n">target_balance</span> <span class="o">=</span> <span class="n">balancer</span><span class="o">.</span><span class="n">fit_resample</span><span class="p">(</span><span class="n">fitur</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+
+<span class="c1"># Print resampled class distribution</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Resampled class distribution:&#39;</span><span class="p">,</span> <span class="n">Counter</span><span class="p">(</span><span class="n">target_balance</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resampled class distribution: Counter({0: 1250, 1: 1250})
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat DataFrame dari fitur dan target yang telah seimbang</span>
+<span class="n">data_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">fitur_balance</span><span class="p">,</span> <span class="n">target_balance</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Menyimpan DataFrame ke dalam file CSV</span>
+<span class="n">data_clean</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data_clean.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot original class distribution</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;quality&#39;</span><span class="p">:</span> <span class="n">target</span><span class="p">}),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Original Class&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot resampled class distribution after Random Over-Sampling</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;quality&#39;</span><span class="p">:</span> <span class="n">target_balance</span><span class="p">}),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;quality&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Random Over-Sampling With imblearn&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/af898f84dcee0eab0f12ba60da0bf62560f7535a0f8ccd5d08209b21fedef1d5.png" src="../_images/af898f84dcee0eab0f12ba60da0bf62560f7535a0f8ccd5d08209b21fedef1d5.png" />
+</div>
+</div>
+</section>
+<section id="mencari-k-atau-fitur-yang-berpengaruh-pada-dataset-sebelum-dinormalisasi">
+<h2>Mencari K atau Fitur yang berpengaruh pada dataset (SEBELUM DINORMALISASI)<a class="headerlink" href="#mencari-k-atau-fitur-yang-berpengaruh-pada-dataset-sebelum-dinormalisasi" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selector</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>  <span class="c1"># Untuk masalah klasifikasi</span>
+<span class="n">X_new</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fitur_balance</span><span class="p">,</span><span class="n">target_balance</span><span class="p">)</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">scores_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">feature_scores</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">fitur_balance</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">scores</span><span class="p">))</span>
+<span class="n">feature_scores</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Urutkan berdasarkan skor Information Gain (dalam urutan menurun)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">feature_names</span><span class="p">,</span> <span class="n">scores</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">feature_scores</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)),</span> <span class="n">scores</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)),</span> <span class="n">feature_names</span><span class="p">,</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Fitur&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Information Gain&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Peringkat Fitur dengan Information Gain&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/5a4b10ac8e72dd89871ef3159527409838a16e4542cd98de66dcb506af424efb.png" src="../_images/5a4b10ac8e72dd89871ef3159527409838a16e4542cd98de66dcb506af424efb.png" />
+</div>
+</div>
+</section>
+<section id="membagi-data">
+<h2>Membagi Data<a class="headerlink" href="#membagi-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fitur_train</span><span class="p">,</span> <span class="n">fitur_test</span><span class="p">,</span> <span class="n">target_train</span><span class="p">,</span> <span class="n">target_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">fitur_balance</span><span class="p">,</span> <span class="n">target_balance</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="normalisasi-data">
+<h2>Normalisasi Data<a class="headerlink" href="#normalisasi-data" title="Permalink to this heading">#</a></h2>
+<section id="normalisasi-zscore">
+<h3>NORMALISASI ZSCORE<a class="headerlink" href="#normalisasi-zscore" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sc</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">zscore_training</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fitur_train</span><span class="p">)</span>
+<span class="n">zscore_testing</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">fitur_test</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">sc</span><span class="p">,</span> <span class="s1">&#39;zscore.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="ne">d</span>:\Maulana\PELAJARAN MATA KULIAH Semester 5\PROYEK SAINS DATA\Tugas PASCA UTS\Perbandingan_Metode.ipynb Cell 47 line 1
+<span class="o">----&gt;</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;vscode-notebook-cell:/d%3A/Maulana/PELAJARAN%20MATA%20KULIAH%20Semester%205/PROYEK%20SAINS%20DATA/Tugas%20PASCA%20UTS/Perbandingan_Metode.ipynb#X64sZmlsZQ%3D%3D?line=0&#39;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">sc</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+      <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;vscode-notebook-cell:/d%3A/Maulana/PELAJARAN%20MATA%20KULIAH%20Semester%205/PROYEK%20SAINS%20DATA/Tugas%20PASCA%20UTS/Perbandingan_Metode.ipynb#X64sZmlsZQ%3D%3D?line=1&#39;</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">zscore_training</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fitur_train</span><span class="p">)</span>
+      <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;vscode-notebook-cell:/d%3A/Maulana/PELAJARAN%20MATA%20KULIAH%20Semester%205/PROYEK%20SAINS%20DATA/Tugas%20PASCA%20UTS/Perbandingan_Metode.ipynb#X64sZmlsZQ%3D%3D?line=2&#39;</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span> <span class="n">zscore_testing</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">fitur_test</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;StandardScaler&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="normalisasi-minmax">
+<h3>NORMALISASI MINMAX<a class="headerlink" href="#normalisasi-minmax" title="Permalink to this heading">#</a></h3>
+<p>Rumus Minmax dan jelaskan apa itu normalisasi MinMax?</p>
+<div class="math notranslate nohighlight">
+\[ X' = \frac{X - min}{max - min} \]</div>
+<p>Contoh Menghitung minmax pada data:
+X	X`
+2	0
+4	0.25
+3	0.125
+10	1</p>
+<p>Min : 2	
+Max : 10</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mm</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">minmax_training</span> <span class="o">=</span> <span class="n">mm</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">fitur_train</span><span class="p">)</span>
+<span class="n">minmax_testing</span> <span class="o">=</span> <span class="n">mm</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">fitur_test</span><span class="p">)</span> 
+<span class="c1"># Joblib digunakan untuk menyimpan file normalisasi mnmax dengan bentuk pickle</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">mm</span><span class="p">,</span> <span class="s1">&#39;minmax.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;minmax.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="seleksi-fitur">
+<h2>SELEKSI FITUR<a class="headerlink" href="#seleksi-fitur" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Penjelasan seleksi fitur dengan information gain itu apa ???</p></li>
+<li><p>Rumus dan penjelasan rumus ??</p></li>
+<li><p>setiap baris kode juga perlu dijelaskan kegunaannya</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selector</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+<span class="n">selected_ft_zscore_training</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+<span class="n">selected_ft_zscore_testing</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">zscore_testing</span><span class="p">)</span>
+<span class="n">selected_ft_minmax_training</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+<span class="n">selected_ft_minmax_testing</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">minmax_testing</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">feature_scores</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">scores_</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fixed acidity&#39;</span><span class="p">,</span> <span class="s1">&#39;volatile acidity&#39;</span><span class="p">,</span> <span class="s1">&#39;citric acid&#39;</span><span class="p">,</span> <span class="s1">&#39;residual sugar&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;chlorides&#39;</span><span class="p">,</span> <span class="s1">&#39;free sulfur dioxide&#39;</span><span class="p">,</span> <span class="s1">&#39;total sulfur dioxide&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;pH&#39;</span><span class="p">,</span> <span class="s1">&#39;sulphates&#39;</span><span class="p">,</span> <span class="s1">&#39;alcohol&#39;</span><span class="p">]</span>
+
+<span class="c1"># Sort the feature scores in descending order</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">feature_scores</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Get the sorted feature scores and names</span>
+<span class="n">sorted_scores</span> <span class="o">=</span> <span class="n">feature_scores</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">sorted_feature_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">feature_names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Plot the feature importances</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sorted_feature_names</span><span class="p">)),</span> <span class="n">sorted_scores</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sorted_feature_names</span><span class="p">)),</span> <span class="n">sorted_feature_names</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Features&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Information Gain&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Feature Importance (Information Gain)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c60bca501939d45cf327c595d2a9be57013213d41fd28a28c2cfbf4116acfcd1.png" src="../_images/c60bca501939d45cf327c595d2a9be57013213d41fd28a28c2cfbf4116acfcd1.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="modeling">
+<h1>MODELING<a class="headerlink" href="#modeling" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Berisi model klasifikasi saja seperti mencari parameter terbaik</p></li>
+<li><p>Menjelaskan setiap metode nya dengan detail dan berikan rumus lalu jelaskan</p></li>
+<li><p>tidak perlu mencari k terbaik di tahap ini, k terbaik dicari setelah normalisasi</p></li>
+<li><p>pada tahap ini semua k ke n di coba di setiap metode untuk menemukan akurasi terbaiknya</p></li>
+<li><p>Melakukan skenario percobaan untuk setiap banyak k dalam data sesuai dengan per-rankingannya</p></li>
+<li><p>memilih akurasi terbaik di setiap model dan fitur” apa saja yang dipakai</p></li>
+</ul>
+<section id="zscore">
+<h2>ZSCORE<a class="headerlink" href="#zscore" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="konsep-random-forest">
+<h2>KONSEP RANDOM FOREST ??????????<a class="headerlink" href="#konsep-random-forest" title="Permalink to this heading">#</a></h2>
+<p>ZSCORE RANDOM FOREST</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the parameter grid for Random Forest</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">],</span>  <span class="c1"># You can adjust the number of trees</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>  <span class="c1"># You can adjust the maximum depth of each tree</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Random Forest model</span>
+<span class="n">random_forest</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+
+<span class="c1"># Create GridSearchCV for Random Forest</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">random_forest</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Use the best parameters to create the Random Forest model</span>
+<span class="n">best_n_estimators</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;n_estimators&#39;</span><span class="p">]</span>
+<span class="n">best_max_depth</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span>
+<span class="n">best_min_samples_split</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">]</span>
+<span class="n">best_min_samples_leaf</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;max_depth&#39;: 30, &#39;min_samples_leaf&#39;: 1, &#39;min_samples_split&#39;: 2, &#39;n_estimators&#39;: 200}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_rf_zscore</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span> <span class="n">max_depth</span><span class="o">=</span> <span class="n">best_max_depth</span><span class="p">,</span><span class="n">min_samples_leaf</span><span class="o">=</span> <span class="n">best_min_samples_leaf</span><span class="p">,</span><span class="n">min_samples_split</span><span class="o">=</span> <span class="n">best_min_samples_split</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span> <span class="n">best_n_estimators</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_rf_zscore</span><span class="p">,</span> <span class="s1">&#39;model_rf_zscore.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_rf_zscore.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Mencari k terbaik melalui model terbaik &gt;&gt;&gt;&gt;</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_rf_zscore</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_zscore_rf</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">zscore_testing</span><span class="p">)</span>
+    <span class="n">model_rf_zscore</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span> <span class="n">max_depth</span><span class="o">=</span> <span class="n">best_max_depth</span><span class="p">,</span><span class="n">min_samples_leaf</span><span class="o">=</span> <span class="n">best_min_samples_leaf</span><span class="p">,</span><span class="n">min_samples_split</span><span class="o">=</span> <span class="n">best_min_samples_split</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span> <span class="n">best_n_estimators</span><span class="p">)</span>
+    <span class="n">model_rf_zscore</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi zscore</span>
+    <span class="n">y_pred_zscore</span> <span class="o">=</span> <span class="n">model_rf_zscore</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_zscore_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi zscore</span>
+    <span class="n">accuracy_rf_zscore</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_zscore</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_rf_zscore</span> <span class="o">&gt;</span> <span class="n">best_accuracy_rf_zscore</span><span class="p">:</span>
+        <span class="n">best_accuracy_rf_zscore</span> <span class="o">=</span> <span class="n">accuracy_rf_zscore</span>
+        <span class="n">best_k_zscore_rf</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random Forest Zscore:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak fitur&quot;</span><span class="p">,</span> <span class="n">best_k_zscore_rf</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_rf_zscore</span><span class="p">)</span>
+<span class="n">best_feature_indices_zscore</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_zscore_rf</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_zscore</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_zscore</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi Zscore):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_zscore</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Random Forest Zscore:
+Banyak fitur 5 dengan akurasi :  0.9712
+Fitur terbaik yang digunakan (dengan normalisasi Zscore):
+[&#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;density&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>ZSCORE LOGISTIC REGRESSION</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>  <span class="c1"># Define the parameter grid for Logistic Regression</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>  <span class="c1"># You can adjust the regularization parameter</span>
+    <span class="s1">&#39;penalty&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;l1&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">],</span>  <span class="c1"># You can choose the type of penalty (L1 or L2)</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Logistic Regression model</span>
+<span class="n">logistic_regression</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create GridSearchCV for Logistic Regression</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">logistic_regression</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Use the best parameters to create the Logistic Regression model</span>
+<span class="n">best_C</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">]</span>
+<span class="n">best_penalty</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;penalty&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;C&#39;: 1, &#39;penalty&#39;: &#39;l2&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_lr_zscore</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">best_C</span><span class="p">,</span><span class="n">penalty</span><span class="o">=</span><span class="n">best_penalty</span><span class="p">,</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_lr_zscore</span><span class="p">,</span> <span class="s1">&#39;model_lr_zscore.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_lr_zscore.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Mencari k terbaik melalui model terbaik &gt;&gt;&gt;&gt;</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_lr_zscore</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_zscore_lr</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">zscore_testing</span><span class="p">)</span>
+    <span class="n">model_zscore</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span>
+    <span class="n">C</span><span class="o">=</span><span class="n">best_C</span><span class="p">,</span>
+    <span class="n">penalty</span><span class="o">=</span><span class="n">best_penalty</span><span class="p">,</span>
+    <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span>
+  <span class="p">)</span>
+    <span class="n">model_zscore</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi zscore</span>
+    <span class="n">y_pred_zscore</span> <span class="o">=</span> <span class="n">model_zscore</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_zscore_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi zscore</span>
+    <span class="n">accuracy_lr_zscore</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_zscore</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_lr_zscore</span> <span class="o">&gt;</span> <span class="n">best_accuracy_lr_zscore</span><span class="p">:</span>
+        <span class="n">best_accuracy_lr_zscore</span> <span class="o">=</span> <span class="n">accuracy_lr_zscore</span>
+        <span class="n">best_k_zscore_lr</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Logistic Regression Zscore:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang bisa digunakan&quot;</span><span class="p">,</span> <span class="n">best_k_zscore_lr</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_lr_zscore</span><span class="p">)</span>
+<span class="n">best_feature_indices_zscore</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_zscore_lr</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_zscore</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_zscore</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi Zscore):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_zscore</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Logistic Regression Zscore:
+Fitur terbaik yang bisa digunakan 11 dengan akurasi :  0.8
+Fitur terbaik yang digunakan (dengan normalisasi Zscore):
+[&#39;fixed acidity&#39;, &#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;residual sugar&#39;, &#39;chlorides&#39;, &#39;free sulfur dioxide&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;, &#39;pH&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>ZSCORE DECISION TREE</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the parameter grid for Decision Tree</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="s1">&#39;entropy&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;splitter&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="s1">&#39;random&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Decision Tree model</span>
+<span class="n">dt_classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+
+<span class="c1"># Create GridSearchCV for Decision Tree</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">dt_classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Use the best parameters to create the Decision Tree model</span>
+<span class="n">best_criterion</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;criterion&#39;</span><span class="p">]</span>
+<span class="n">best_splitter</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;splitter&#39;</span><span class="p">]</span>
+<span class="n">best_max_depth</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;criterion&#39;: &#39;entropy&#39;, &#39;max_depth&#39;: 50, &#39;splitter&#39;: &#39;random&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_dt_zscore</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">criterion</span><span class="o">=</span><span class="n">best_criterion</span><span class="p">,</span><span class="n">splitter</span><span class="o">=</span><span class="n">best_splitter</span><span class="p">,</span><span class="n">max_depth</span><span class="o">=</span><span class="n">best_max_depth</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_dt_zscore</span><span class="p">,</span> <span class="s1">&#39;model_dt_zscore.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_dt_zscore.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Mencari k terbaik melalui model terbaik &gt;&gt;&gt;&gt;</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_dt_zscore</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_zscore_dt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_zscore_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">zscore_testing</span><span class="p">)</span>
+    <span class="n">model_zscore</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span>
+    <span class="n">criterion</span><span class="o">=</span><span class="n">best_criterion</span><span class="p">,</span>
+    <span class="n">splitter</span><span class="o">=</span><span class="n">best_splitter</span><span class="p">,</span>
+    <span class="n">max_depth</span><span class="o">=</span><span class="n">best_max_depth</span>
+    <span class="p">)</span>
+    <span class="n">model_zscore</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi zscore</span>
+    <span class="n">y_pred_zscore</span> <span class="o">=</span> <span class="n">model_zscore</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_zscore_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi zscore</span>
+    <span class="n">accuracy_dt_zscore</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_zscore</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_dt_zscore</span> <span class="o">&gt;</span> <span class="n">best_accuracy_dt_zscore</span><span class="p">:</span>
+        <span class="n">best_accuracy_dt_zscore</span> <span class="o">=</span> <span class="n">accuracy_dt_zscore</span>
+        <span class="n">best_k_zscore_dt</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Decision Tree Zscore:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak fitur&quot;</span><span class="p">,</span> <span class="n">best_k_zscore_dt</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_dt_zscore</span><span class="p">)</span>
+<span class="n">best_feature_indices_zscore</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_zscore_dt</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_zscore_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_zscore</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_zscore</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi Zscore):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_zscore</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Decision Tree Zscore:
+Banyak fitur 8 dengan akurasi :  0.968
+Fitur terbaik yang digunakan (dengan normalisasi Zscore):
+[&#39;fixed acidity&#39;, &#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;chlorides&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="minmax">
+<h2>MINMAX<a class="headerlink" href="#minmax" title="Permalink to this heading">#</a></h2>
+<p>MINMAX RANDOM FOREST</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the parameter grid for Random Forest</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">],</span>  <span class="c1"># You can adjust the number of trees</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>  <span class="c1"># You can adjust the maximum depth of each tree</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Random Forest model</span>
+<span class="n">random_forest</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+
+<span class="c1"># Create GridSearchCV for Random Forest</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">random_forest</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+
+<span class="c1"># Use the best parameters to create the Random Forest model</span>
+<span class="n">best_n_estimators</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;n_estimators&#39;</span><span class="p">]</span>
+<span class="n">best_max_depth</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span>
+<span class="n">best_min_samples_split</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;min_samples_split&#39;</span><span class="p">]</span>
+<span class="n">best_min_samples_leaf</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;max_depth&#39;: 30, &#39;min_samples_leaf&#39;: 1, &#39;min_samples_split&#39;: 2, &#39;n_estimators&#39;: 200}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_rf_minmax</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span> <span class="n">max_depth</span><span class="o">=</span> <span class="n">best_max_depth</span><span class="p">,</span><span class="n">min_samples_leaf</span><span class="o">=</span> <span class="n">best_min_samples_leaf</span><span class="p">,</span><span class="n">min_samples_split</span><span class="o">=</span> <span class="n">best_min_samples_split</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span> <span class="n">best_n_estimators</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_rf_minmax</span><span class="p">,</span> <span class="s1">&#39;model_rf_minmax.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_rf_minmax.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>mencari k terbaik dari model klasifikasi terbaik &gt;&gt;&gt;&gt;&gt;&gt;</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_rf_minmax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_minmax_rf</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">minmax_testing</span><span class="p">)</span>
+    <span class="n">model_minmax</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span> <span class="n">best_max_depth</span><span class="p">,</span>
+                                          <span class="n">min_samples_leaf</span><span class="o">=</span> <span class="n">best_min_samples_leaf</span><span class="p">,</span>
+                                          <span class="n">min_samples_split</span><span class="o">=</span> <span class="n">best_min_samples_split</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span> <span class="n">best_n_estimators</span><span class="p">)</span>
+    <span class="n">model_minmax</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi minmax</span>
+    <span class="n">y_pred_minmax</span> <span class="o">=</span> <span class="n">model_minmax</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_minmax_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi minmax</span>
+    <span class="n">accuracy_rf_minmax</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_minmax</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_rf_minmax</span> <span class="o">&gt;</span> <span class="n">best_accuracy_rf_minmax</span><span class="p">:</span>
+        <span class="n">best_accuracy_rf_minmax</span> <span class="o">=</span> <span class="n">accuracy_rf_minmax</span>
+        <span class="n">best_k_minmax_rf</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random Forest Minmax:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak fitur&quot;</span><span class="p">,</span> <span class="n">best_k_minmax_rf</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_rf_minmax</span><span class="p">)</span>
+<span class="n">best_feature_indices_minmax</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_minmax_rf</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_minmax</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_minmax</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi Minmax):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_minmax</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Random Forest Minmax:
+Banyak fitur 11 dengan akurasi :  0.9728
+Fitur terbaik yang digunakan (dengan normalisasi Minmax):
+[&#39;fixed acidity&#39;, &#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;residual sugar&#39;, &#39;chlorides&#39;, &#39;free sulfur dioxide&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;, &#39;pH&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>MINMAX LOGISTIC REGRESSION</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the parameter grid for Logistic Regression</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>  <span class="c1"># You can adjust the regularization parameter</span>
+    <span class="s1">&#39;penalty&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;l1&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">],</span>  <span class="c1"># You can choose the type of penalty (L1 or L2)</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Logistic Regression model</span>
+<span class="n">logistic_regression</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create GridSearchCV for Logistic Regression</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">logistic_regression</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Use the best parameters to create the Logistic Regression model</span>
+<span class="n">best_C</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">]</span>
+<span class="n">best_penalty</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;penalty&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;C&#39;: 10, &#39;penalty&#39;: &#39;l1&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_lr_minmax</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">best_C</span><span class="p">,</span><span class="n">penalty</span><span class="o">=</span><span class="n">best_penalty</span><span class="p">,</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_lr_minmax</span><span class="p">,</span> <span class="s1">&#39;model_lr_minmax.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_lr_minmax.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Mencari k terbaik melalui model terbaik &gt;&gt;&gt;&gt;</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_lr_minmax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_minmax_lr</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">minmax_testing</span><span class="p">)</span>
+    <span class="n">model_minmax</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span>
+    <span class="n">C</span><span class="o">=</span><span class="n">best_C</span><span class="p">,</span>
+    <span class="n">penalty</span><span class="o">=</span><span class="n">best_penalty</span><span class="p">,</span>
+    <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span>
+    <span class="p">)</span>
+    <span class="n">model_minmax</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi Minmax</span>
+    <span class="n">y_pred_minmax</span> <span class="o">=</span> <span class="n">model_minmax</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_minmax_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi Minmax</span>
+    <span class="n">accuracy_lr_minmax</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_minmax</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_lr_minmax</span> <span class="o">&gt;</span> <span class="n">best_accuracy_lr_minmax</span><span class="p">:</span>
+        <span class="n">best_accuracy_lr_minmax</span> <span class="o">=</span> <span class="n">accuracy_lr_minmax</span>
+        <span class="n">best_k_minmax_lr</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Logistic Regression Minmax:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak fitur&quot;</span><span class="p">,</span> <span class="n">best_k_minmax_lr</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_lr_minmax</span><span class="p">)</span>
+<span class="n">best_feature_indices_minmax</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_minmax_lr</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_minmax</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_minmax</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi minmax):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_minmax</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Logistic Regression Minmax:
+Banyak fitur 6 dengan akurasi :  0.8
+Fitur terbaik yang digunakan (dengan normalisasi minmax):
+[&#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>MINMAX DECISION TREE</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the parameter grid for Decision Tree</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;criterion&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="s1">&#39;entropy&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;splitter&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="s1">&#39;random&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a Decision Tree model</span>
+<span class="n">dt_classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+
+<span class="c1"># Create GridSearchCV for Decision Tree</span>
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">dt_classifier</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+<span class="c1"># Display the best parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best Parameters:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Use the best parameters to create the Decision Tree model</span>
+<span class="n">best_criterion</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;criterion&#39;</span><span class="p">]</span>
+<span class="n">best_splitter</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;splitter&#39;</span><span class="p">]</span>
+<span class="n">best_max_depth</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s1">&#39;max_depth&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best Parameters: {&#39;criterion&#39;: &#39;entropy&#39;, &#39;max_depth&#39;: 20, &#39;splitter&#39;: &#39;best&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_dt_minmax</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">criterion</span><span class="o">=</span><span class="n">best_criterion</span><span class="p">,</span><span class="n">splitter</span><span class="o">=</span><span class="n">best_splitter</span><span class="p">,</span><span class="n">max_depth</span><span class="o">=</span><span class="n">best_max_depth</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model_dt_minmax</span><span class="p">,</span> <span class="s1">&#39;model_dt_minmax.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;model_dt_minmax.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_accuracy_dt_minmax</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_k_minmax_dt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">fitur_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Buat objek SelectKBest dengan mutual_info_classif sebagai fungsi skor</span>
+    <span class="n">k_best</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_training</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+    <span class="n">selected_ft_minmax_testing</span> <span class="o">=</span> <span class="n">k_best</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">minmax_testing</span><span class="p">)</span>
+    <span class="n">model_minmax</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span>
+    <span class="n">criterion</span><span class="o">=</span><span class="n">best_criterion</span><span class="p">,</span>
+    <span class="n">splitter</span><span class="o">=</span><span class="n">best_splitter</span><span class="p">,</span>
+    <span class="n">max_depth</span><span class="o">=</span><span class="n">best_max_depth</span>
+    <span class="p">)</span>
+    <span class="n">model_minmax</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span>
+
+    <span class="c1"># Lakukan prediksi pada data uji dengan normalisasi minmax</span>
+    <span class="n">y_pred_minmax</span> <span class="o">=</span> <span class="n">model_minmax</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">selected_ft_minmax_testing</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi dengan normalisasi minmax</span>
+    <span class="n">accuracy_dt_minmax</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">target_test</span><span class="p">,</span> <span class="n">y_pred_minmax</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">accuracy_dt_minmax</span> <span class="o">&gt;</span> <span class="n">best_accuracy_dt_minmax</span><span class="p">:</span>
+        <span class="n">best_accuracy_dt_minmax</span> <span class="o">=</span> <span class="n">accuracy_dt_minmax</span>
+        <span class="n">best_k_minmax_dt</span> <span class="o">=</span> <span class="n">k</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Decision Tree Minmax:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Banyak fitur&quot;</span><span class="p">,</span> <span class="n">best_k_minmax_dt</span><span class="p">,</span> <span class="s2">&quot;dengan akurasi : &quot;</span><span class="p">,</span> <span class="n">best_accuracy_dt_minmax</span><span class="p">)</span>
+<span class="n">best_feature_indices_minmax</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">mutual_info_classif</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">best_k_minmax_dt</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">selected_ft_minmax_training</span><span class="p">,</span> <span class="n">target_train</span><span class="p">)</span><span class="o">.</span><span class="n">get_support</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">best_features_minmax</span> <span class="o">=</span> <span class="p">[</span><span class="n">fitur</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">best_feature_indices_minmax</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fitur terbaik yang digunakan (dengan normalisasi Minmax):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">best_features_minmax</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Decision Tree Minmax:
+Banyak fitur 9 dengan akurasi :  0.9664
+Fitur terbaik yang digunakan (dengan normalisasi Minmax):
+[&#39;fixed acidity&#39;, &#39;volatile acidity&#39;, &#39;citric acid&#39;, &#39;chlorides&#39;, &#39;total sulfur dioxide&#39;, &#39;density&#39;, &#39;pH&#39;, &#39;sulphates&#39;, &#39;alcohol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="evaluasi">
+<h1>EVALUASI<a class="headerlink" href="#evaluasi" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>berisikan evaluasi dari hasil klasifikasi data seperti perbandingan akurasi</p></li>
+<li><p>berisikan confusion matrix dan komponen didalmnya untuk evaluasi data seperti akurasi,recal,f1-score dll</p></li>
+</ul>
+<section id="perbandingan">
+<h2>PERBANDINGAN<a class="headerlink" href="#perbandingan" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;ZSCORE Random Forest&quot;</span><span class="p">,</span> <span class="s2">&quot;ZSCORE Logistic Regression&quot;</span><span class="p">,</span><span class="s2">&quot;ZSCORE Decision Tree&quot;</span><span class="p">,</span> <span class="s2">&quot;MINMAX Random Forest&quot;</span><span class="p">,</span> <span class="s2">&quot;MINMAX Logistic Regression&quot;</span><span class="p">,</span><span class="s2">&quot;MINMAX Decision Tree&quot;</span><span class="p">]</span>
+<span class="n">accuracies</span> <span class="o">=</span> <span class="p">[</span><span class="n">best_accuracy_rf_zscore</span><span class="p">,</span> <span class="n">best_accuracy_lr_zscore</span><span class="p">,</span><span class="n">best_accuracy_dt_zscore</span><span class="p">,</span><span class="n">best_accuracy_rf_minmax</span><span class="p">,</span> <span class="n">best_accuracy_lr_minmax</span><span class="p">,</span><span class="n">best_accuracy_dt_minmax</span><span class="p">]</span>
+<span class="n">k_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">best_k_zscore_rf</span><span class="p">,</span> <span class="n">best_k_zscore_lr</span><span class="p">,</span><span class="n">best_k_zscore_dt</span><span class="p">,</span><span class="n">best_k_minmax_rf</span><span class="p">,</span> <span class="n">best_k_minmax_lr</span><span class="p">,</span><span class="n">best_k_minmax_dt</span><span class="p">]</span>
+
+
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Metode&#39;</span><span class="p">:</span> <span class="n">methods</span><span class="p">,</span> <span class="s1">&#39;Akurasi&#39;</span><span class="p">:</span> <span class="n">accuracies</span><span class="p">,</span> <span class="s1">&#39;Banyak Fitur Yang digunakan&#39;</span><span class="p">:</span> <span class="n">k_values</span><span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                       Metode  Akurasi  Banyak Fitur Yang digunakan
+0        ZSCORE Random Forest   0.9712                            5
+1  ZSCORE Logistic Regression   0.8000                           11
+2        ZSCORE Decision Tree   0.9680                            8
+3        MINMAX Random Forest   0.9728                           11
+4  MINMAX Logistic Regression   0.8000                            6
+5        MINMAX Decision Tree   0.9664                            9
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>——————- TUGAS PROYEK SAINS DATA ——————–</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bussiness-understanding">BUSSINESS UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-proyek">TUJUAN PROYEK</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menilai-kualitas-pada-anggur-merah-red-wine-yang-diproduksi-oleh-perusahaan-vinho-verde-dengan-menggunakan-model-klasifikasi-kualitas-anggur-dapat-dinyatakan-dengan-menentukan-nilai-regressi-seperti-berikut">Menilai kualitas pada anggur merah (red wine) yang diproduksi oleh perusahaan vinho verde dengan menggunakan model klasifikasi, kualitas anggur dapat dinyatakan dengan menentukan nilai regressi seperti berikut:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-fitur">DESKRIPSI FITUR</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teknik-pengumpulan-data">Teknik Pengumpulan Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">DESKRIPSI FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-data-understanding">TIPS DATA UNDERSTANDING</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">DESKRIPSI FITUR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipe-data">TIPE DATA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terdapat-beberapa-tipe-data-yang-terdapat-didalam-dataset-diantaranya">Terdapat beberapa Tipe Data yang terdapat didalam dataset, diantaranya</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-value">IDENTIFIKASI MISSING VALUE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">VISUALISASI DATA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-outlier">IDENTIFIKASI OUTLIER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-menetukan-kualitas-wine-buruk-baik-diatas-sudah-ada">TIPS MENETUKAN KUALITAS WINE (BURUK/BAIK) (DIATAS SUDAH ADA)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terdapat-tips-untuk-menangani-masalah-regresi-maka-dapat-menetapkan-batas-kualitas-anggur-dimana-jika">Terdapat Tips untuk menangani masalah regresi maka dapat menetapkan batas kualitas anggur dimana, jika:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-anggur-lebih-besar-sama-dengan-7-maka-dinyatakan-good-atau-bernilai-1">-Kualitas Anggur lebih besar sama dengan 7 maka dinyatakan “good” atau bernilai 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-anggur-di-bawah-angka-7-maka-dinyatakan-not-good-atau-bernilai-0">-Kualitas Anggur di bawah angka 7 maka dinyatakan “not good” atau bernilai 0</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-refrensi-disini">Link Refrensi :  disini</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-proporsi-jumlah-kelas-pada-data">IDENTIFIKASI PROPORSI JUMLAH KELAS PADA DATA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">PREPROCESSING DATA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dari-data-understanding-diatas-dapat-disimpulkan-bahwasannya">Dari Data Understanding diatas dapat disimpulkan bahwasannya:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maka-dari-itu-perlu-dilakukan-beberapa-langkah-preprocessing-pada-data-seperti">Maka dari itu perlu dilakukan beberapa langkah preprocessing pada data seperti:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penanganan-pada-outlier-data">Penanganan Pada Outlier Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#balancing-data">Balancing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-k-atau-fitur-yang-berpengaruh-pada-dataset-sebelum-dinormalisasi">Mencari K atau Fitur yang berpengaruh pada dataset (SEBELUM DINORMALISASI)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data">Membagi Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data">Normalisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-zscore">NORMALISASI ZSCORE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-minmax">NORMALISASI MINMAX</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">SELEKSI FITUR</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling">MODELING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscore">ZSCORE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-random-forest">KONSEP RANDOM FOREST ??????????</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax">MINMAX</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi">EVALUASI</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perbandingan">PERBANDINGAN</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
