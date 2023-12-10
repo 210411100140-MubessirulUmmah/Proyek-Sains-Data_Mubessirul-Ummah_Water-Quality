@@ -25,7 +25,7 @@ Proyek sains data adalah usaha sistematis untuk mengumpulkan, mengorganisir, men
 Proyek sains data dapat diterapkan dalam berbagai bidang seperti keuangan, kesehatan, pemasaran, dan lainnya. Tujuan utamanya adalah untuk membuat keputusan yang lebih baik, mengoptimalkan proses, dan mendapatkan pemahaman yang lebih baik tentang fenomena yang dihadapi berdasarkan analisis data yang akurat dan relevan.
 
 
-# file: PSD_Mubessirul Ummah_210411100140_Water Quality
-# file: 210411100140_Mubessirul_Ummah_PSD_Pertemuan_6
-# file: pycaret
+# <a href'PSD_Mubessirul Ummah_210411100140_Water Quality.html'>PROYEK SAINS DATA WATER QUALITY</a>
+# <a href'210411100140_Mubessirul_Ummah_PSD_Pertemuan_6.html'>PROYEK SAINS DATA EXTRAKSI AUDIO</a>
+# <a href'pycaret.html'>PROYEK SAINS DATA UJICOBA PYCARET</a>
 
