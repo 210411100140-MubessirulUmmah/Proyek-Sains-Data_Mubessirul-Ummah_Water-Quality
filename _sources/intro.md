@@ -1,5 +1,5 @@
 # <center><b>PROYEK SAINS DATA<b></center>
-<img src="https://drive.google.com/file/d/1MqbQSdhoVBLpssZgq-YRbzMvY5TJmiod/view?usp=sharing" alt="Logo">
+
 Mubessirul Ummah - 210411100140
 
 mubarijojo.ummah11@gmail.com
@@ -25,7 +25,7 @@ Proyek sains data adalah usaha sistematis untuk mengumpulkan, mengorganisir, men
 Proyek sains data dapat diterapkan dalam berbagai bidang seperti keuangan, kesehatan, pemasaran, dan lainnya. Tujuan utamanya adalah untuk membuat keputusan yang lebih baik, mengoptimalkan proses, dan mendapatkan pemahaman yang lebih baik tentang fenomena yang dihadapi berdasarkan analisis data yang akurat dan relevan.
 
 
-# <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/PSD_Mubessirul%20Ummah_210411100140_Water%20Quality.html">PROYEK SAINS DATA WATER QUALITY</a>
-# <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/210411100140_Mubessirul_Ummah_PSD_Pertemuan_6.html">PROYEK SAINS DATA EKSTRAKSI AUDIO</a>
-# <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/pycaret.html">PROYEK SAINS DATA UJI PYCARET</a>
+### <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/PSD_Mubessirul%20Ummah_210411100140_Water%20Quality.html">PROYEK SAINS DATA WATER QUALITY</a>
+### <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/210411100140_Mubessirul_Ummah_PSD_Pertemuan_6.html">PROYEK SAINS DATA EKSTRAKSI AUDIO</a>
+### <a href="https://210411100140-mubessirulummah.github.io/Proyek-Sains-Data_Mubessirul-Ummah_Water-Quality/pycaret.html">PROYEK SAINS DATA UJI PYCARET</a>
 
